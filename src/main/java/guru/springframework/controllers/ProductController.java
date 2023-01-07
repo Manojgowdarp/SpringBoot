@@ -59,5 +59,10 @@ public class ProductController {
         return "redirect:/product/" + product.getId();
     }
 
+    public String savProduct(Product product){
 
+        productService.saveProduct(product);
+
+        return "redirect:/product/" + product.getId();
+    }
 }
