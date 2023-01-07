@@ -51,5 +51,13 @@ public class ProductController {
 
         return "redirect:/product/" + product.getId();
     }
+    @RequestMapping(value = "product", method = RequestMethod.POST)
+    public String savProduct(Product product){
+
+        productService.saveProduct(product);
+
+        return "redirect:/product/" + product.getId();
+    }
+
 
 }
