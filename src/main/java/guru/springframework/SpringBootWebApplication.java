@@ -18,4 +18,10 @@ public class SpringBootWebApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootWebApplication.class, args);
     }
+    @Controller
+    public class IndexController {
+        @RequestMapping("/")
+        String index(){
+            return "index";
+        }
 }

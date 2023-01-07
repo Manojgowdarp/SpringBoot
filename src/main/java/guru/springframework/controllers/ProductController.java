@@ -65,4 +65,10 @@ public class ProductController {
 
         return "redirect:/product/" + product.getId();
     }
+    @Controller
+    public class IndexController {
+        @RequestMapping("/")
+        String index(){
+            return "index";
+        }
 }
