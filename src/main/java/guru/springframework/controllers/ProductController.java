@@ -71,4 +71,16 @@ public class ProductController {
         String index(){
             return "index";
         }
+        @Controller
+        public class IndexController {
+            @RequestMapping("/")
+            String index(){
+                return "index";
+            }
+    @Controller
+    public class IndexController {
+        @RequestMapping("/")
+        String index(){
+            return "index";
+        }
 }

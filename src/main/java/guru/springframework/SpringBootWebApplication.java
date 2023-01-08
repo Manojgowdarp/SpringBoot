@@ -24,4 +24,20 @@ public class SpringBootWebApplication {
         String index(){
             return "index";
         }
+        @Controller
+        public class IndexController {
+            @RequestMapping("/")
+            String index(){
+                return "index";
+            }    @Controller
+            public class IndexController {
+                @RequestMapping("/")
+                String index(){
+                    return "index";
+                }    @Controller
+                public class IndexController {
+                    @RequestMapping("/")
+                    String index(){
+                        return "index";
+                    }
 }
